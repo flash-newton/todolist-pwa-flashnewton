@@ -1,0 +1,159 @@
+.content-container{
+    height: calc(100vh - 64px)!important
+}
+
+.side-menu-item{
+    padding: 10px!important;
+}
+
+#btn-category-add{
+    position: relative;
+    top: -5px;
+}
+
+.sm-category-item-container{
+    cursor: pointer;
+}
+
+#side-form{
+    overflow: hidden;
+}
+
+.side-form-retracted{
+    max-width: 0px!important;
+    overflow: hidden;
+}
+
+#side-small-form{
+
+}
+
+.task-container{
+    padding: 15px;
+}
+
+.task-chk{
+    position: relative!important;
+    left: 20px;
+    top: -3px;
+}
+
+.task-container-title{
+    position: relative;
+    top: -3px;
+}
+
+#side-small-form{
+    max-width: 50px;
+}
+
+#sidebar-left-container{
+    position: absolute;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar-right-container{
+    position: absolute;
+    z-index: 10001;
+    right: 0;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+
+#sidebar-left-button, #sidebar-right-button{
+    font-size: 1rem;
+    width: 42px;
+    height: 42px;
+}
+
+
+#sidecolumn-center{
+    padding: 10px 0px 10px 0px;
+}
+
+#sidecolumn-left{
+    max-width: 15px;
+}
+#sidecolumn-right{
+    max-width: 15px;
+}
+
+#create-form-container{
+    align-content: center;
+    text-align: center;
+    padding: 1rem!important;
+    border-radius: 10px;
+}
+
+#nav-title{
+    display: none;
+}
+@media (min-width: 576px) {
+    #sidecolumn-left{
+        max-width: 50px;
+    }
+    #sidecolumn-right{
+        max-width: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    #sidecolumn-left{
+        max-width: 150px;
+    }
+    #sidecolumn-right{
+        max-width: 150px;
+    }
+    #nav-title{
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    #sidebar-left-container{
+        width: 280px;
+    }
+    #sidecolumn-left{
+        max-width: 200px;
+    }
+    #sidecolumn-right{
+        max-width: 200px;
+    }
+    #sidecolumn-center{
+        padding: 30px 10px 10px 10px;
+    }
+    #sidebar-right-container{
+        width: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sidecolumn-right{
+        max-width: 370px;
+    }
+
+    #sidebar-left-container{
+        width: 300px;
+    }
+    #sidecolumn-left{
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #sidebar-left-container{
+        width: 350px;
+    }
+    #sidecolumn-left{
+        max-width: 370px;
+    }
+    #nav-title{
+        display: block;
+    }
+}
+
+
+

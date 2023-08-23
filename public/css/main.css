@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.testbox{
+    margin: 0;
+}
+
+:root {
+    --clr-light: #ffffff;
+    --clr-dark: #003366;
+    --clr-primary: #2936A6;
+    --clr-secondary: #7C8284;
+    --clr-accent: #ff7750;
+
+    --bg-primary: #607DE5;
+    --bg-primary-light: rgba(96, 125, 229, 0.6);
+    --bg-secondary: #7C8284;
+    --bg-secondary-light: rgba(124, 130, 132, 0.6);
+
+
+    --txt-primary: #555353;
+    --txt-light: #ffffff;
+
+    --navbar-background: var(--clr-primary);
+    --navbar-foreground: #ffffff;
+    --grey-light: #f6f6f6;
+
+    --border: #dee2e6;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ff-title: "Playfair Display", serif;
+    --ff-body: "Assistant", sans-serif;
+
+    --signtext :rgb(82, 80, 80);
+    --logbtn : rgb(62, 62, 133);
+    --dyncontainer : rgb(240, 243, 247);
+    --calenderbox : white;
+
+}
+
+.darkmode {
+    --clr-light: #ffffff;
+    --clr-dark: #555353;
+    --clr-primary: #445496;
+    --clr-secondary: #7C8284;
+    --clr-accent: #ff7750;
+
+    --bg-primary: #384166;
+    --bg-primary-light: rgba(96, 125, 229, 0.6);
+    --bg-secondary: #7C8284;
+    --bg-secondary-light: rgba(124, 130, 132, 0.6);
+
+
+    --txt-primary: #f1f1f1;
+    --txt-light: #ffffff;
+
+    --navbar-background: var(--clr-primary);
+    --navbar-foreground: #ffffff;
+    --grey-light: #f6f6f6;
+
+    --border: #dee2e6;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    --signtext :rgb(247, 244, 244);
+    --logbtn : rgb(30, 30, 95);
+    --dyncontainer : rgb(107, 111, 145);
+    --calenderbox : rgb(105, 104, 104);
+    
+
+}
+
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: calc(3rem + 7vw);
+    font-family: var(--ff-title);
+    margin: 0 0 0.25em;
+    line-height: 1;
+}
+
+.btn-primary {
+    background: var(--clr-primary);
+    color: var(--background);
+}
+
+.btn-secondary {
+    background: var(--clr-accent);
+    color: var(--background);
+    border: currentColor solid 2px;
+}
+
+#calendar .selected:after{
+    background-color: var(--clr-accent);
+}
+
+.pink-text{
+    color: var(--clr-accent);
+}
+
+.white-text{
+    color: var(--txt-light);
+}
+
+.dark-text{
+    color: var(--txt-primary);
+}
+
+.navbar{
+    background: var(--navbar-background);
+}
+
+.navbar-brand{
+    color: var(--navbar-foreground)!important;
+}
+
+.navbar.secondary{
+    background: var(--clr-accent);
+}
+
+#current-display-name{
+    color: var(--navbar-foreground)!important;
+}
+
+#sidebar-left-container{
+    border-right: thin solid var(--border);
+    background: var(--background);
+}
+
+#sidebar-right-container{
+    border-left: thin solid var(--border);
+    background: var(--background);
+}
+
+.bg-primary{
+    background-color: var(--bg-primary)!important;
+}
+
+.bg-primary-light{
+    background-color: var(--bg-primary-light);
+}
+
+.shadow-secondary{
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 6px;
+}
+
+.navbar-dark .nav-link {
+    color: rgba(255, 255, 255, 1)!important;
+}
+
+.btn-line-light{
+    color: var(--txt-light)!important;
+    border-color: 1px solid var(--txt-light)!important;
+    background-color: transparent;
+}
+
+.btn-line-dark{
+    color: var(--txt-primary)!important;
+    border-color: 1px solid var(--txt-primary)!important;
+    background-color: transparent;
+}
+.catselected{
+    background-color: var(--bg-secondary-light);
+    color: var(--txt-primary);
+    font-weight: bold;
+}
+
+.signbtn{
+    color: var(--signtext) !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+.btn-primary{
+    background-color: var(--logbtn);
+ 
+    color: white;
+}
+
+h2{
+    color: var(--txt-primary);
+}
+.selected-day , .selected-month{
+    color: var(--txt-primary);
+}
+.category-container , .task-container{
+   background-color: var(--dyncontainer);
+   color: var(--txt-primary);
+}
+th, td{
+    color: var(--txt-primary);
+}
+.calendar-wrap, #disabled{
+    background-color: var(--calenderbox);
+}
+
+@media (max-width: 992px) {
+    .bg-md-primary-light {
+        background-color: var(--bg-primary-light);
+
+    }
+}
+
+
